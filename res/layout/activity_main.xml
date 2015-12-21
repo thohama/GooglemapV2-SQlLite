@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ketAmbilBaris" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/inGetId"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btnGetId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnGetRow" >
+        </Button>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show MAP" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/inUpdateNama"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/inUpdateHobi"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/inUpdateLat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/inUpdateLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnUpdateRow" >
+        </Button>
+    </LinearLayout>
+    
+    <TableLayout android:layout_height="wrap_content" 
+      android:layout_width="match_parent"  
+      android:id="@+id/tabel_data"> 
+    <TableRow android:id="@+id/tableRow1"  
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content"> 
+    <TextView android:layout_height="wrap_content" 
+      android:layout_width="50dip"  
+      android:text="@string/nomorLabel" 
+      android:id="@+id/no_id"></TextView> 
+    <TextView android:layout_height="wrap_content" 
+      android:layout_width="100dip" 
+      android:text="@string/namaLabel" 
+      android:id="@+id/nama_id"></TextView> 
+      <TextView android:layout_width="100dip" 
+      android:layout_height="wrap_content"  
+      android:text="@string/hobiLabel" 
+      android:id="@+id/hobi_id"></TextView> 
+      <TextView
+          android:id="@+id/textView6"
+          android:layout_width="100dip"
+          android:layout_height="wrap_content"
+          android:text="Latitude" />
+
+      <TextView
+          android:id="@+id/textView7"
+          android:layout_width="100dip"
+          android:layout_height="wrap_content"
+          android:text="Longitude" />
+      </TableRow> 
+    </TableLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

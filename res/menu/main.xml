@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+       <item
+        android:id="@+id/mInfo"
+        android:checkable="true"
+        android:checked="true"
+        
+        android:enabled="true"
+        android:menuCategory="secondary"
+        android:title="Insert"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/mSetting"
+        android:checkable="false"
+        android:menuCategory="system"
+        android:title="Update"
+        >
+    </item>
+    <item
+        android:id="@+id/mUpdate"
+        android:menuCategory="container"
+        android:title="Delete">
+    </item>
+
+</menu>
